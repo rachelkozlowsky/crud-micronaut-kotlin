@@ -41,6 +41,17 @@ dependencies {
     implementation("io.micronaut.sql:micronaut-hibernate-jpa")
     runtimeOnly("com.h2database:h2")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
+// database configs
+    implementation ("org.postgresql:postgresql")
+    annotationProcessor("io.micronaut.data:micronaut-data-processor")
+    implementation("io.micronaut.data:micronaut-data-jdbc")
+    compileOnly("io.micronaut.sql:micronaut-hibernate-jpa")
+    compileOnly("io.micronaut.spring:micronaut-spring-context")
+    implementation("org.postgresql:postgresql")
+
+
+
+
 
 }
 
